@@ -4,3 +4,13 @@ SELECT *
 FROM customers
 
 --
+
+select 
+first_name,
+country
+from customers
+
+--Where Clause-used to filter data based on a condition
+select *
+from customers
+where score!=0
