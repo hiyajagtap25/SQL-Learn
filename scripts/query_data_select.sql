@@ -25,3 +25,18 @@ select *
 from customers
 order by
     country asc, score desc
+
+--GROUP BY
+
+SELECT
+country,
+sum(score)
+FROM customers
+Group by country
+
+--ALIAS
+select 
+	country,
+	SUM(score) AS total_score
+FROM customers
+GROUP BY country
