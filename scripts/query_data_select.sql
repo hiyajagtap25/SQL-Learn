@@ -14,3 +14,14 @@ from customers
 select *
 from customers
 where score!=0
+
+--ORDER BY
+select *
+from customers
+order by Score desc
+
+--nested order by
+select *
+from customers
+order by
+    country asc, score desc
