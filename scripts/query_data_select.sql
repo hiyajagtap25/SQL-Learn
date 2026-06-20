@@ -40,3 +40,24 @@ select
 	SUM(score) AS total_score
 FROM customers
 GROUP BY country
+
+--TOP
+
+select top 3*
+from customers
+
+-- DISTINCT
+select distinct
+ country
+From customers
+
+
+--top and orderby cmbined
+
+select top 3*
+from customers
+order by score desc
+
+
+--All querys combined
+
