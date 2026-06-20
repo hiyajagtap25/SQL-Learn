@@ -1,0 +1,34 @@
+-- INSERT VALUES IN TABLE
+
+INSERT INTO customers(id,first_name,country,score)
+Values 
+    (6,'Mika','USA',null),
+    (7,'Josh','UK',350)
+
+--insert using select (from table customers to table persons)
+
+INSERT INTO persons(id, person_name, birth_date, phone_number) 
+SELECT 
+	id, 
+	first_name,
+	NULL,
+	'Unknown'
+FROM customers
+
+select * from persons
+
+
+--UPDATE 
+update customers
+set first_name= 'Allie'
+where id=9
+
+update customers 
+	set score=0
+where score IS NULL
+
+select * from customers
+
+--delete command
+DELETE FROM customers
+WHERE id>5
